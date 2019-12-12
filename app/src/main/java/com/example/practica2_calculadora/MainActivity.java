@@ -202,16 +202,18 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 if (operador.equals("√")) {
-                    resultado = Double.parseDouble(Resultado.getText().toString());
-                    resultado = Math.sqrt((resultado));
+                    //resultado = Double.parseDouble(Resultado.getText().toString());
+                    resultado = Math.sqrt(Double.parseDouble((reserva)));
                     Resultado.setText(String.valueOf(resultado));
                 }
 
                 if (operador.equals("X²")) {
-                    resultado = Double.parseDouble(Resultado.getText().toString());
-                    resultado = Math.pow(resultado,2);
+                    //resultado = Double.parseDouble(Resultado.getText().toString());
+                    resultado = Math.pow(Double.parseDouble(reserva),2);
                     Resultado.setText(String.valueOf(resultado));
                 }
+
+                //GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA SIRI CPP
 
             }
         });
